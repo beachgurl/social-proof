@@ -1,0 +1,148 @@
+:root {
+  /*primary*/
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+
+  /*neutral*/
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.outer-container {
+  background: url(./images/bg-pattern-top-mobile.svg) top no-repeat,
+    url(./images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+}
+
+.inner-container {
+  padding: 50px 15px;
+}
+
+.catchy,
+.ratings,
+.reviews {
+  margin-bottom: 30px;
+}
+
+.introHeader {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--VeryDarkMagenta);
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.intro {
+  color: var(--DarkGrayishMagenta);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.ratebox {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: var(--LightGrayishMagenta);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.ratingdiv {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.rating {
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.reviewbox {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: var(--VeryDarkMagenta);
+  padding: 30px;
+  padding-bottom: 15px;
+}
+
+.reviewBasic {
+  display: flex;
+  margin-bottom: 30px;
+  height: 45px;
+}
+
+.profileTag {
+  align-self: center;
+  padding: 5px;
+}
+
+.profilePhoto {
+  border-radius: 50%;
+  margin-right: 20px;
+  max-height: 100%;
+}
+
+.revName {
+  font-weight: 700;
+  color: var(--White);
+  margin: 0;
+  padding-bottom: 3px;
+}
+
+.revCat {
+  color: var(--SoftPink);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.reviewText {
+  color: var(--White);
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 1440px) {
+  /*.outer-container {
+    background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
+      url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
+  }*/
+
+  .inner-container {
+    padding: 150px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .catchy {
+    width: 50%;
+  }
+
+  .ratings {
+    width: 50%;
+  }
+
+  .reviews {
+    display: flex;
+  }
+
+  .introHeader,
+  .intro {
+    text-align: left;
+    padding: 0;
+  }
+}
