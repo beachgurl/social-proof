@@ -1,68 +1,80 @@
 :root {
-  /*primary*/
+  /* primary */
   --VeryDarkMagenta: hsl(300, 43%, 22%);
   --SoftPink: hsl(333, 80%, 67%);
 
-  /*neutral*/
+  /* neutral */
   --DarkGrayishMagenta: hsl(303, 10%, 53%);
   --LightGrayishMagenta: hsl(300, 24%, 96%);
   --White: hsl(0, 0%, 100%);
+
+  /* font-size */
 }
 html {
   box-sizing: border-box;
+  font-size: 15px;
 }
 
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
-  font-size: 15px;
 }
-
 .outer-container {
+  /* div-background */
   background: url(./images/bg-pattern-top-mobile.svg) top no-repeat,
     url(./images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
 }
 
 .inner-container {
-  padding: 50px 15px;
+  /* div container for all elements */
+  padding: 3.333rem 1rem;
 }
 
-.catchy,
+.catchy, /* 3 main sections of the page */
 .ratings,
 .reviews {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
+.hero {
+  /* main div inside section-catchy */
+  text-align: center;
+}
 .introHeader {
-  font-size: 30px;
+  /* 1st element in div-hero */
+  font-size: 2em;
   font-weight: 700;
   color: var(--VeryDarkMagenta);
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 10px;
+  padding: 1.333rem;
+  padding-bottom: 0.667rem;
 }
 
 .intro {
+  /* 2nd element in div-hero */
+  font-size: 1em;
   color: var(--DarkGrayishMagenta);
-  text-align: center;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 .ratebox {
-  border-radius: 15px;
-  margin-bottom: 10px;
+  /*contains div-ratingdiv and p-rating */
+  border-radius: 1rem;
+  margin-bottom: 0.667rem;
   background-color: var(--LightGrayishMagenta);
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1em;
 }
 
 .ratingdiv {
+  /*div contains the stars.svg */
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 0.677rem;
 }
 
 .rating {
+  /* p */
   color: var(--VeryDarkMagenta);
   font-weight: 700;
   text-align: center;
@@ -71,38 +83,44 @@ body {
 }
 
 .reviewbox {
-  border-radius: 15px;
-  margin-bottom: 20px;
+  /* contains div-reviewBasic and div-reviewDetail */
+  border-radius: 1rem;
+  margin-bottom: 1.333rem;
   background-color: var(--VeryDarkMagenta);
-  padding: 30px;
-  padding-bottom: 15px;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1em;
 }
 
 .reviewBasic {
+  /* contains the customer image and div-profileTag */
   display: flex;
-  margin-bottom: 30px;
-  height: 45px;
+  margin-bottom: 2rem;
+  height: 3rem;
 }
-
-.profileTag {
-  align-self: center;
-  padding: 5px;
-}
-
 .profilePhoto {
+  /* customer image img */
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 1.333rem;
   max-height: 100%;
 }
 
+.profileTag {
+  /* div contains the customer name and type of customer */
+  align-self: center;
+  padding: 0.333rem;
+}
+
 .revName {
+  /* customer name */
   font-weight: 700;
   color: var(--White);
   margin: 0;
-  padding-bottom: 3px;
+  padding-bottom: 0.2rem;
 }
 
 .revCat {
+  /* type of customer */
   color: var(--SoftPink);
   font-weight: 400;
   margin: 0;
@@ -110,39 +128,177 @@ body {
 }
 
 .reviewText {
+  /* p review comment */
   color: var(--White);
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
-@media screen and (min-width: 1440px) {
-  /*.outer-container {
+@media only screen and (min-width: 1024px) {
+  .outer-container {
     background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
       url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
-  }*/
+  }
 
   .inner-container {
-    padding: 150px;
-    padding-bottom: 50px;
+    padding: 12rem;
+    padding-bottom: 3.333rem;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  .catchy {
-    width: 50%;
-  }
-
+  .catchy,
   .ratings {
-    width: 50%;
+    flex: 1;
   }
 
   .reviews {
+    flex-basis: 100%;
     display: flex;
   }
 
-  .introHeader,
-  .intro {
+  .hero {
     text-align: left;
-    padding: 0;
+    max-width: 46.667rem;
+  }
+  .introHeader {
+    font-size: 3.3em;
+  }
+  .intro {
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+
+  .ratingdiv {
+    display: inline-block;
+    padding-left: 1.333rem;
+    font-size: 1.5em;
+  }
+
+  .ratingstar {
+    padding: 0.133rem;
+    padding-bottom: 0;
+  }
+  .rating {
+    display: inline;
+    padding-left: 1.333rem;
+  }
+
+  .ratebox {
+    max-width: 30rem;
+    padding-top: 1.333rem;
+    margin-bottom: 1.333rem;
+  }
+  .stackme0 {
+    position: relative;
+    left: 13.333rem;
+  }
+
+  .stackme1 {
+    position: relative;
+    left: 16.667rem;
+  }
+  .stackme2 {
+    position: relative;
+    left: 20rem;
+  }
+  .reviewbox {
+    max-width: 26.667rem;
+    padding: 3.333rem;
+    padding-bottom: 2.333rem;
+    font-size: 1.5em;
+  }
+  .rb1 {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+  }
+  .rb2 {
+    position: relative;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    /* .outer-container {
+      background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
+        url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
+    }*/
+
+    .inner-container {
+      padding: 12rem;
+      padding-bottom: 3.333rem;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .catchy,
+    .ratings {
+      flex: 1;
+    }
+
+    .reviews {
+      flex-basis: 100%;
+      display: flex;
+    }
+    .hero {
+      text-align: left;
+    }
+    .introHeader {
+      font-size: 5.3em;
+    }
+    .intro {
+      font-size: 1.5em;
+      line-height: 1.3;
+    }
+
+    .ratingdiv {
+      display: inline-block;
+      padding-left: 1.333rem;
+    }
+
+    .ratingstar {
+      padding: 2px;
+      padding-bottom: 0;
+    }
+    .rating {
+      display: inline;
+      padding-left: 1.333rem;
+    }
+
+    .ratebox {
+      max-width: 450px;
+      padding-top: 1.333rem;
+      margin-bottom: 1.333rem;
+    }
+    .stackme0 {
+      position: relative;
+      left: 200px;
+    }
+
+    .stackme1 {
+      position: relative;
+      left: 250px;
+    }
+    .stackme2 {
+      position: relative;
+      left: 300px;
+    }
+    .reviewbox {
+      max-width: 400px;
+      padding: 50px;
+      padding-bottom: 35px;
+    }
+    .rb1 {
+      position: relative;
+      top: 30px;
+      left: 30px;
+    }
+    .rb2 {
+      position: relative;
+      top: 60px;
+      left: 60px;
+    }
   }
 }
