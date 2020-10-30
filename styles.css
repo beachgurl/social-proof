@@ -156,13 +156,11 @@ body {
     flex-basis: 100%;
     display: flex;
   }
-
   .hero {
     text-align: left;
-    max-width: 46.667rem;
   }
   .introHeader {
-    font-size: 3.3em;
+    font-size: 5.3em;
   }
   .intro {
     font-size: 1.5em;
@@ -172,11 +170,10 @@ body {
   .ratingdiv {
     display: inline-block;
     padding-left: 1.333rem;
-    font-size: 1.5em;
   }
 
   .ratingstar {
-    padding: 0.133rem;
+    padding: 2px;
     padding-bottom: 0;
   }
   .rating {
@@ -185,120 +182,36 @@ body {
   }
 
   .ratebox {
-    max-width: 30rem;
+    max-width: 450px;
     padding-top: 1.333rem;
     margin-bottom: 1.333rem;
   }
   .stackme0 {
     position: relative;
-    left: 13.333rem;
+    left: 200px;
   }
 
   .stackme1 {
     position: relative;
-    left: 16.667rem;
+    left: 250px;
   }
   .stackme2 {
     position: relative;
-    left: 20rem;
+    left: 300px;
   }
   .reviewbox {
-    max-width: 26.667rem;
-    padding: 3.333rem;
-    padding-bottom: 2.333rem;
-    font-size: 1.5em;
+    max-width: 400px;
+    padding: 50px;
+    padding-bottom: 35px;
   }
   .rb1 {
     position: relative;
-    top: 2rem;
-    left: 2rem;
+    top: 30px;
+    left: 30px;
   }
   .rb2 {
     position: relative;
-    top: 4rem;
-    left: 4rem;
-  }
-
-  @media only screen and (min-width: 375px) {
-    /* .outer-container {
-      background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
-        url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
-    }*/
-
-    .inner-container {
-      padding: 12rem;
-      padding-bottom: 3.333rem;
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    .catchy,
-    .ratings {
-      flex: 1;
-    }
-
-    .reviews {
-      flex-basis: 100%;
-      display: flex;
-    }
-    .hero {
-      text-align: left;
-    }
-    .introHeader {
-      font-size: 5.3em;
-    }
-    .intro {
-      font-size: 1.5em;
-      line-height: 1.3;
-    }
-
-    .ratingdiv {
-      display: inline-block;
-      padding-left: 1.333rem;
-    }
-
-    .ratingstar {
-      padding: 2px;
-      padding-bottom: 0;
-    }
-    .rating {
-      display: inline;
-      padding-left: 1.333rem;
-    }
-
-    .ratebox {
-      max-width: 450px;
-      padding-top: 1.333rem;
-      margin-bottom: 1.333rem;
-    }
-    .stackme0 {
-      position: relative;
-      left: 200px;
-    }
-
-    .stackme1 {
-      position: relative;
-      left: 250px;
-    }
-    .stackme2 {
-      position: relative;
-      left: 300px;
-    }
-    .reviewbox {
-      max-width: 400px;
-      padding: 50px;
-      padding-bottom: 35px;
-    }
-    .rb1 {
-      position: relative;
-      top: 30px;
-      left: 30px;
-    }
-    .rb2 {
-      position: relative;
-      top: 60px;
-      left: 60px;
-    }
+    top: 60px;
+    left: 60px;
   }
 }
