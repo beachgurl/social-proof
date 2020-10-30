@@ -133,7 +133,7 @@ body {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 375px) {
   .outer-container {
     background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
       url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
@@ -219,7 +219,7 @@ body {
     left: 4rem;
   }
 
-  @media only screen and (min-width: 1440px) {
+  @media only screen and (min-width: 375px) {
     /* .outer-container {
       background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
         url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
