@@ -151,15 +151,12 @@ body {
   .catchy,
   .ratings {
     flex: 1;
-    border: 0.166rem solid red;
   }
   .reviews {
-    border: 0.166rem solid blue;
     flex-basis: 100%;
     display: flex;
   }
   .hero {
-    border: 0.166rem solid green;
     text-align: left;
     padding-top: 2.333rem;
     padding-left: 7rem;
