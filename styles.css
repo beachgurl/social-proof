@@ -18,21 +18,18 @@ html {
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
-}
-.outer-container {
-  /* div-background */
-  background: url(./images/bg-pattern-top-mobile.svg) top no-repeat,
-    url(./images/bg-pattern-bottom-mobile.svg) bottom no-repeat;
+  background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat,
+    url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
 
-.inner-container {
+.container {
   /* div container for all elements */
-  padding: 3.333rem 1rem;
+  padding: 3.333rem 1.5rem;
 }
 
 .catchy, /* 3 main sections of the page */
-.ratings,
-.reviews {
+    .ratings,
+    .reviews {
   margin-bottom: 2rem;
 }
 
@@ -133,38 +130,53 @@ body {
   line-height: 1.5;
 }
 
-@media only screen and (min-width: 375px) {
-  .outer-container {
-    background: url(./images/bg-pattern-top-desktop.svg) top no-repeat,
-      url(./images/bg-pattern-bottom-desktop.svg) bottom no-repeat;
-  }
+.attribution {
+  font-size: 0.733em;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
-  .inner-container {
-    padding: 12rem;
-    padding-bottom: 3.333rem;
+@media (min-width: 1440px) {
+  body {
+    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat,
+      url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  }
+  .container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-
   .catchy,
   .ratings {
     flex: 1;
+    border: 0.166rem solid red;
   }
-
   .reviews {
+    border: 0.166rem solid blue;
     flex-basis: 100%;
     display: flex;
   }
   .hero {
+    border: 0.166rem solid green;
     text-align: left;
+    padding-top: 2.333rem;
+    padding-left: 7rem;
   }
   .introHeader {
-    font-size: 5.3em;
+    font-size: 4em;
+    padding: 0;
+    max-width: 35rem;
+
+    /*letter-spacing: -0.1rem;*/
   }
   .intro {
-    font-size: 1.5em;
-    line-height: 1.3;
+    font-size: 1.2em;
+    line-height: 1.5;
+    padding-top: 0;
+    max-width: 40rem;
+    margin-top: 0.667rem;
   }
 
   .ratingdiv {
@@ -173,7 +185,7 @@ body {
   }
 
   .ratingstar {
-    padding: 2px;
+    padding: 0.133rem;
     padding-bottom: 0;
   }
   .rating {
@@ -182,36 +194,52 @@ body {
   }
 
   .ratebox {
-    max-width: 450px;
+    max-width: 35rem;
     padding-top: 1.333rem;
-    margin-bottom: 1.333rem;
+    margin: 0;
+    font-size: 1.2em;
   }
   .stackme0 {
     position: relative;
-    left: 200px;
+    top: 4rem;
+    left: 1.333rem;
   }
 
   .stackme1 {
     position: relative;
-    left: 250px;
+    top: 5.333rem;
+    left: 6rem;
   }
   .stackme2 {
     position: relative;
-    left: 300px;
+    top: 7rem;
+    left: 10rem;
+    margin-right: 7rem;
   }
   .reviewbox {
-    max-width: 400px;
-    padding: 50px;
-    padding-bottom: 35px;
+    max-width: 25.333rem;
+    padding-top: 3.333rem;
+    padding-right: 2.667rem;
+    padding-left: 2.667rem;
+    font-size: 1.1em;
+    line-height: 1.2;
+  }
+  .rb0 {
+    margin-left: 7rem;
   }
   .rb1 {
     position: relative;
-    top: 30px;
-    left: 30px;
+    top: 2rem;
+    left: 2rem;
   }
   .rb2 {
     position: relative;
-    top: 60px;
-    left: 60px;
+    top: 4rem;
+    left: 4rem;
+    margin-right: 7rem;
+  }
+
+  .attribution {
+    font-size: 1em;
   }
 }
