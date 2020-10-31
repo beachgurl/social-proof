@@ -7,9 +7,8 @@
   --DarkGrayishMagenta: hsl(303, 10%, 53%);
   --LightGrayishMagenta: hsl(300, 24%, 96%);
   --White: hsl(0, 0%, 100%);
-
-  /* font-size */
 }
+
 html {
   box-sizing: border-box;
   font-size: 15px;
@@ -21,18 +20,15 @@ body {
   background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat,
     url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
-
 .container {
-  /* div container for all elements */
+  /*div container for all elements */
   padding: 3.333rem 1.5rem;
 }
-
 .catchy, /* 3 main sections of the page */
-    .ratings,
-    .reviews {
+.ratings,
+.reviews {
   margin-bottom: 2rem;
 }
-
 .hero {
   /* main div inside section-catchy */
   text-align: center;
@@ -45,7 +41,6 @@ body {
   padding: 1.333rem;
   padding-bottom: 0.667rem;
 }
-
 .intro {
   /* 2nd element in div-hero */
   font-size: 1em;
@@ -53,7 +48,6 @@ body {
   font-weight: 500;
   line-height: 1.5;
 }
-
 .ratebox {
   /*contains div-ratingdiv and p-rating */
   border-radius: 1rem;
@@ -63,13 +57,11 @@ body {
   padding-bottom: 1rem;
   font-size: 1em;
 }
-
 .ratingdiv {
   /*div contains the stars.svg */
   text-align: center;
   padding-bottom: 0.677rem;
 }
-
 .rating {
   /* p */
   color: var(--VeryDarkMagenta);
@@ -78,7 +70,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .reviewbox {
   /* contains div-reviewBasic and div-reviewDetail */
   border-radius: 1rem;
@@ -88,7 +79,6 @@ body {
   padding-bottom: 1rem;
   font-size: 1em;
 }
-
 .reviewBasic {
   /* contains the customer image and div-profileTag */
   display: flex;
@@ -101,13 +91,11 @@ body {
   margin-right: 1.333rem;
   max-height: 100%;
 }
-
 .profileTag {
   /* div contains the customer name and type of customer */
   align-self: center;
   padding: 0.333rem;
 }
-
 .revName {
   /* customer name */
   font-weight: 700;
@@ -115,7 +103,6 @@ body {
   margin: 0;
   padding-bottom: 0.2rem;
 }
-
 .revCat {
   /* type of customer */
   color: var(--SoftPink);
@@ -123,13 +110,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .reviewText {
   /* p review comment */
   color: var(--White);
   line-height: 1.5;
 }
-
 .attribution {
   font-size: 0.733em;
   text-align: center;
@@ -138,105 +123,105 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1440px) {
-  body {
-    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat,
-      url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
-  }
+@media screen and (min-width: 768px) {
   .container {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  .catchy,
-  .ratings {
+  .catchy {
+    margin-top: 4rem;
     flex: 1;
-  }
-  .reviews {
-    flex-basis: 100%;
-    display: flex;
+    margin-left: 5rem;
+    margin-bottom: 0.8rem;
   }
   .hero {
     text-align: left;
-    padding-top: 2.333rem;
-    padding-left: 7rem;
   }
   .introHeader {
-    font-size: 4em;
+    font-size: 2.3em;
     padding: 0;
-    max-width: 35rem;
-
-    /*letter-spacing: -0.1rem;*/
+    max-width: 25rem;
   }
   .intro {
-    font-size: 1.2em;
+    font-size: 0.8em;
     line-height: 1.5;
     padding-top: 0;
-    max-width: 40rem;
     margin-top: 0.667rem;
   }
-
-  .ratingdiv {
-    display: inline-block;
-    padding-left: 1.333rem;
+  .ratings {
+    flex: 1;
+    margin-top: 3rem;
+    margin-bottom: 0.8rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
   }
-
-  .ratingstar {
-    padding: 0.133rem;
-    padding-bottom: 0;
+  .ratebox {
+    font-size: 0.667em;
+    margin-bottom: 0.667rem;
+    border-radius: 0.667rem;
+    padding-top: 0.333rem;
+    padding-bottom: 0.333rem;
+    max-width: 70%;
+  }
+  .ratingdiv {
+    padding: 0;
   }
   .rating {
-    display: inline;
-    padding-left: 1.333rem;
-  }
-
-  .ratebox {
-    max-width: 35rem;
-    padding-top: 1.333rem;
-    margin: 0;
-    font-size: 1.2em;
-  }
-  .stackme0 {
-    position: relative;
-    top: 4rem;
-    left: 1.333rem;
-  }
-
-  .stackme1 {
-    position: relative;
-    top: 5.333rem;
-    left: 6rem;
+    padding-top: 0.133rem;
   }
   .stackme2 {
+    flex: 1;
     position: relative;
-    top: 7rem;
-    left: 10rem;
-    margin-right: 7rem;
+    top: 1.5rem;
+    left: 7rem;
+  }
+  .stackme1 {
+    flex: 1;
+    position: relative;
+    top: 1.5rem;
+    left: 4rem;
+  }
+  .stackme0 {
+    flex: 1;
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+  }
+  .reviews {
+    flex: 1;
+    flex-basis: 100%;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 0;
+    display: flex;
   }
   .reviewbox {
-    max-width: 25.333rem;
-    padding-top: 3.333rem;
-    padding-right: 2.667rem;
-    padding-left: 2.667rem;
-    font-size: 1.1em;
+    font-size: 0.667em;
     line-height: 1.2;
+    padding: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.333rem;
+  }
+  .reviewBasic {
+    margin-bottom: 1rem;
   }
   .rb0 {
-    margin-left: 7rem;
+    flex: 1;
   }
   .rb1 {
-    position: relative;
-    top: 2rem;
-    left: 2rem;
+    flex: 1;
+    margin-left: 0.667rem;
+    margin-right: 0.667rem;
   }
   .rb2 {
-    position: relative;
-    top: 4rem;
-    left: 4rem;
-    margin-right: 7rem;
+    flex: 1;
   }
-
   .attribution {
-    font-size: 1em;
+    font-size: 0.667em;
   }
 }
