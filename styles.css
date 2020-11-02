@@ -309,7 +309,7 @@ body {
     display: flex;
   }
   .reviewbox {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.2;
     padding: 1.5rem;
     padding-right: 1.5rem;
