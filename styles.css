@@ -239,7 +239,7 @@ body {
   }
   .catchy {
     flex: 1;
-    margin-top: 9rem;
+    margin-top: 8.777rem;
     margin-left: 10rem;
     margin-bottom: 3rem;
   }
@@ -273,6 +273,7 @@ body {
     padding-top: 0.333rem;
     padding-bottom: 0.333rem;
     max-width: 80%;
+    max-height: 20%;
   }
   .ratingdiv {
     display: inline-block;
@@ -308,7 +309,7 @@ body {
     display: flex;
   }
   .reviewbox {
-    font-size: 0.667em;
+    font-size: 0.8em;
     line-height: 1.2;
     padding: 1.5rem;
     padding-right: 1.5rem;
