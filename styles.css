@@ -12,13 +12,13 @@
 html {
   box-sizing: border-box;
   font-size: 15px;
+  background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat,
+    url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
 
 body {
   margin: 0;
   font-family: "Spartan", sans-serif;
-  background: url(./images/bg-pattern-top-mobile.svg) top left no-repeat,
-    url(./images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
 }
 .container {
   /*div container for all elements */
@@ -167,6 +167,8 @@ body {
     padding-top: 0.333rem;
     padding-bottom: 0.333rem;
     max-width: 70%;
+    max-height: 15%;
+    text-align: center;
   }
   .ratingdiv {
     padding: 0;
@@ -177,13 +179,13 @@ body {
   .stackme2 {
     flex: 1;
     position: relative;
-    top: 1.5rem;
-    left: 7rem;
+    top: 0.337rem;
+    left: 6rem;
   }
   .stackme1 {
     flex: 1;
     position: relative;
-    top: 1.5rem;
+    top: 0.8rem;
     left: 4rem;
   }
   .stackme0 {
@@ -210,7 +212,8 @@ body {
   .reviewBasic {
     margin-bottom: 1rem;
   }
-  .rb0 {
+  .rb0,
+  .rb2 {
     flex: 1;
   }
   .rb1 {
@@ -218,9 +221,112 @@ body {
     margin-left: 0.667rem;
     margin-right: 0.667rem;
   }
+
+  .attribution {
+    font-size: 0.667em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    background: url(./images/bg-pattern-top-desktop.svg) top left no-repeat,
+      url(./images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+  }
+  .container {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .catchy {
+    flex: 1;
+    margin-top: 9rem;
+    margin-left: 10rem;
+    margin-bottom: 0.8rem;
+  }
+  .hero {
+    text-align: left;
+  }
+  .introHeader {
+    font-size: 3em;
+    padding: 0;
+    max-width: 30rem;
+  }
+  .intro {
+    font-size: 1em;
+    padding-top: 0;
+    max-width: 35rem;
+  }
+  .ratings {
+    flex: 1;
+    margin-top: 9rem;
+    margin-bottom: 0.8rem;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .ratebox {
+    font-size: 0.7em;
+    margin-bottom: 0.667rem;
+    border-radius: 0.667rem;
+    padding-top: 0.333rem;
+    padding-bottom: 0.333rem;
+    max-width: 60%;
+  }
+  .ratingdiv {
+    display: inline-flex;
+    padding-right: 0.667rem;
+  }
+  .rating {
+    display: inline-flex;
+  }
+  .stackme2 {
+    flex: 1;
+    position: relative;
+    top: 0.337rem;
+    left: 7rem;
+  }
+  .stackme1 {
+    flex: 1;
+    position: relative;
+    top: 0.8rem;
+    left: 4rem;
+  }
+  .stackme0 {
+    flex: 1;
+    position: relative;
+    top: 1.5rem;
+    left: 1rem;
+  }
+  .reviews {
+    flex: 1;
+    flex-basis: 100%;
+    margin-right: 10rem;
+    margin-left: 10rem;
+    margin-bottom: 0;
+    display: flex;
+  }
+  .reviewbox {
+    font-size: 0.667em;
+    line-height: 1.2;
+    padding: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.333rem;
+  }
+  .reviewBasic {
+    margin-bottom: 1rem;
+  }
+  .rb0,
   .rb2 {
     flex: 1;
   }
+  .rb1 {
+    flex: 1;
+    margin-left: 0.667rem;
+    margin-right: 0.667rem;
+  }
+
   .attribution {
     font-size: 0.667em;
   }
