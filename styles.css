@@ -241,7 +241,7 @@ body {
     flex: 1;
     margin-top: 9rem;
     margin-left: 10rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 4rem;
   }
   .hero {
     text-align: left;
@@ -259,7 +259,7 @@ body {
   .ratings {
     flex: 1;
     margin-top: 9rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 4rem;
     margin-right: 10rem;
     display: flex;
     flex-direction: column;
@@ -272,14 +272,14 @@ body {
     border-radius: 0.667rem;
     padding-top: 0.333rem;
     padding-bottom: 0.333rem;
-    max-width: 60%;
+    max-width: 80%;
   }
   .ratingdiv {
-    display: inline-flex;
+    display: inline-block;
     padding-right: 0.667rem;
   }
   .rating {
-    display: inline-flex;
+    display: inline-block;
   }
   .stackme2 {
     flex: 1;
@@ -304,7 +304,7 @@ body {
     flex-basis: 100%;
     margin-right: 10rem;
     margin-left: 10rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     display: flex;
   }
   .reviewbox {
@@ -312,19 +312,25 @@ body {
     line-height: 1.2;
     padding: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 0.333rem;
+    padding-bottom: 0.667rem;
   }
   .reviewBasic {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
-  .rb0,
+  .rb0 {
+    position: relative;
+  }
   .rb2 {
     flex: 1;
+    position: relative;
+    top: 2rem;
   }
   .rb1 {
     flex: 1;
-    margin-left: 0.667rem;
-    margin-right: 0.667rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    position: relative;
+    top: 1rem;
   }
 
   .attribution {
