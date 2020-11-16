@@ -23,7 +23,6 @@ body {
   margin: auto;
 }
 .catchy {
-  /* 3 main sections of the page */
   margin-bottom: 2rem;
   margin-top: 5rem;
 }
@@ -31,13 +30,11 @@ body {
   text-align: center;
 }
 .introHeader {
-  /* 1st element in div-hero */
   font-size: 2em;
   font-weight: 700;
   color: var(--VeryDarkMagenta);
 }
 .intro {
-  /* 2nd element in div-hero */
   font-size: 0.9em;
   color: var(--DarkGrayishMagenta);
   font-weight: 500;
@@ -142,10 +139,6 @@ body {
   .ratings {
     flex: 1;
     margin-top: 3rem;
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;*/
   }
   .ratebox {
     font-size: 0.667em;
@@ -160,13 +153,13 @@ body {
   .stackme2 {
     flex: 1;
     position: relative;
-    top: 0.337rem;
+    top: 1.5rem;
     left: 6rem;
   }
   .stackme1 {
     flex: 1;
     position: relative;
-    top: 0.8rem;
+    top: 1.5rem;
     left: 4rem;
   }
   .stackme0 {
@@ -244,7 +237,7 @@ body {
   .rating {
     display: inline-block;
   }
-  .stackme2 {
+  /*.stackme2 {
     flex: 1;
     position: relative;
     top: 0.337rem;
@@ -255,7 +248,7 @@ body {
     position: relative;
     top: 0.8rem;
     left: 4rem;
-  }
+  }*/
   .reviewbox {
     font-size: 0.8em;
     line-height: 1.2;
